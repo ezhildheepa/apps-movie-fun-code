@@ -21,6 +21,10 @@
 <c:set var="language" value="${pageContext.request.locale}"/>
 <fmt:setLocale value="${language}"/>
 
+<!--
+Change references to the /setup.jsp path (in the index.jsp) to /setup.
+-->
+
 <!DOCTYPE html>
 <html lang="${language}">
 <head>
@@ -61,8 +65,8 @@
   <h1>Moviefun</h1>
 
   <p>Please select one of the following links:</p>
-  <a href="setup.jsp">Setup</a> - Sets up the application with some sample data<br/>
-  <a href="moviefun">Index</a> - Start the application<br/>
+  <a href="/setup">Setup</a> - Sets up the application with some sample data<br/>
+  <a href="/moviefun">Index</a> - Start the application<br/>
 
 </div>
 <!-- /container -->
